@@ -1,6 +1,7 @@
-import { PaletteOptions } from '@mui/material/styles'
-import "library";
-const testOptions = {} as PaletteOptions;
+import { Person } from 'library-original';
+import "library-augmenter";
 
-// "aNewProperty" was added by the library import
-testOptions.aNewProperty = "something";
+const andrew = new Person("Andrew");
+
+// The "greet" method was added by "library-augmenter"
+console.log(andrew.greet());

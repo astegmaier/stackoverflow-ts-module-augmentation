@@ -13,9 +13,7 @@
     "rebuild": "yarn clean && yarn build && yarn build:tsc"
   },
   "dependencies": {
-    "@mui/material": "^5.1.0",
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0"
+    "library-original": "1.0.0"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.0.1",
