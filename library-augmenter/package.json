@@ -2,15 +2,15 @@
   "name": "library-augmenter",
   "version": "1.0.0",
   "license": "ISC",
-  "types": "dist/main.d.ts",
+  "types": "dist/index.d.ts",
   "source": "src/index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "parcel build --cache-dir .parcel-cache",
-    "build:tsc": "tsc",
+    "build:tsc:compare": "tsc",
+    "build:tsc:fix": "rimraf dist/index.d.ts && tsc --outDir dist",
     "clean": "rimraf dist .parcel-cache dist-tsc",
-    "rebuild": "yarn clean && yarn build && yarn build:tsc"
+    "rebuild": "yarn clean && yarn build && yarn build:tsc:compare"
   },
   "dependencies": {
     "library-original": "1.0.0"
