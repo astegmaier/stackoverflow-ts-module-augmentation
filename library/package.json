@@ -10,6 +10,10 @@
     "build": "parcel build --cache-dir .parcel-cache",
     "clean": "rimraf dist .parcel-cache"
   },
+  "dependencies": {
+    "@mui/material": "^5.1.0",
+    "@emotion/react": "^11.6.0"
+  },
   "devDependencies": {
     "@parcel/packager-ts": "^2.0.1",
     "@parcel/transformer-typescript-types": "^2.0.1",
