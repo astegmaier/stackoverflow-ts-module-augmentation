@@ -1,0 +1,13 @@
+{
+    "name": "consumer",
+    "version": "1.0.0",
+    "license": "ISC",
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf dist .parcel-cache"
+    },
+    "devDependencies": {
+      "typescript": "^4.4.4"
+    }
+  }
+  
