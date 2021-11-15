@@ -1,18 +1,14 @@
-import { Components, createTheme, PaletteOptions } from '@mui/material/styles';
+
+// Adding these lines causes parcel to output a .d.ts file that includes the definition for "message" but no augmentation declarations.
+import { PaletteOptions } from '@mui/material/styles';
+// export const message = "Hello World!";
 
 declare module '@mui/material/styles' {
-  interface Palette {
-    ternary: Palette['primary'];
-    quaternary: Palette['primary'];
-    gridColor: string;
-    logoColor: string;
-  }
   interface PaletteOptions {
-    ternary?: PaletteOptions['primary'];
-    quaternary?: PaletteOptions['primary'];
-    gridColor?: string;
-    logoColor?: string;
+    aNewProperty: string;
   }
 }
 
-export const defaultTheme = createTheme();
+// Putting the export _below_ the augmentation declaration causes parcel to output a _blank_ .d.ts file.
+export const message = "Hello World!";
+
