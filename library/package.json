@@ -7,7 +7,7 @@
   "main": "dist/main.js",
   "module": "dist/module.js",
   "scripts": {
-    "build": "parcel build",
+    "build": "parcel build --cache-dir .parcel-cache",
     "clean": "rimraf dist .parcel-cache"
   },
   "devDependencies": {

@@ -1,1 +1,2 @@
-export const message = "Hello World!";
+export { Observable } from "./observable";
+import "./map";
