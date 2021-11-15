@@ -1,6 +1,8 @@
 # stackoverflow-ts-module-augmentation
 
-This repo illustrates a bug in parcel where if you try to use the [module augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation) feature of typescript in the context of a library project that is using `@parcel/transformer-typescript-types` to generate a `.d.ts` file, parcel will output an incorrect `.d.ts` file with many elements missing.
+This repo illustrates [a bug in parcel](https://github.com/parcel-bundler/parcel/issues/7306) where if you try to use the [module augmentation](https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation) feature of typescript in the context of a library project that is using `@parcel/transformer-typescript-types` to generate a `.d.ts` file, parcel will output an incorrect `.d.ts` file with many elements missing.
+
+The bug was found while attempting to answer [this stackoverflow question](https://stackoverflow.com/questions/69975417/parcel-typescript-module-augmentation).
 
 ## Repro steps
 1. Install dependencies with `yarn`
