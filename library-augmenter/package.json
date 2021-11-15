@@ -1,5 +1,5 @@
 {
-  "name": "library",
+  "name": "library-augmenter",
   "version": "1.0.0",
   "license": "ISC",
   "types": "dist/main.d.ts",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "@mui/material": "^5.1.0",
-    "@emotion/react": "^11.6.0"
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0"
   },
   "devDependencies": {
     "@parcel/packager-ts": "^2.0.1",

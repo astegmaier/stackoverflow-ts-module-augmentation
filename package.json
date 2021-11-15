@@ -1,8 +1,9 @@
 {
     "private": true,
-    "workspaces" : ["library", "consumer"],
+    "workspaces" : ["library-augmenter", "library-original", "consumer"],
     "scripts": {
-        "library": "yarn workspace library",
+        "library-augmenter": "yarn workspace library-augmenter",
+        "library-original": "yarn workspace library-original",
         "consumer": "yarn workspace consumer"
     }
 }
