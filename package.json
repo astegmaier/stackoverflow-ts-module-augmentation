@@ -4,6 +4,7 @@
     "scripts": {
         "library-augmenter": "yarn workspace library-augmenter",
         "library-original": "yarn workspace library-original",
-        "consumer": "yarn workspace consumer"
+        "consumer": "yarn workspace consumer",
+        "build": "yarn library-original build && yarn library-augmenter build"
     }
 }

@@ -6,11 +6,12 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "scripts": {
-    "build": "parcel build --cache-dir .parcel-cache",
+    "build": "yarn build:parcel && yarn build:tsc:compare",
+    "build:parcel": "parcel build --cache-dir .parcel-cache",
     "build:tsc:compare": "tsc",
     "build:tsc:fix": "rimraf dist/index.d.ts && tsc --outDir dist",
     "clean": "rimraf dist .parcel-cache dist-tsc",
-    "rebuild": "yarn clean && yarn build && yarn build:tsc:compare"
+    "rebuild": "yarn clean && yarn build"
   },
   "dependencies": {
     "library-original": "1.0.0"
