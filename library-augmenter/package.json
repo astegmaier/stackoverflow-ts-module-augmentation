@@ -9,7 +9,7 @@
     "build": "yarn build:parcel && yarn build:tsc:compare",
     "build:parcel": "parcel build --cache-dir .parcel-cache",
     "build:tsc:compare": "tsc",
-    "build:tsc:fix": "rimraf dist/index.d.ts && tsc --outDir dist",
+    "build:tsc:fix": "rimraf dist/index.d.ts && tsc",
     "clean": "rimraf dist .parcel-cache dist-tsc",
     "rebuild": "yarn clean && yarn build"
   },
