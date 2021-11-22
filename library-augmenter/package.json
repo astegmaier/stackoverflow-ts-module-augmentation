@@ -11,7 +11,8 @@
     "build:tsc:compare": "tsc",
     "build:tsc:fix": "rimraf dist/index.d.ts && tsc",
     "clean": "rimraf dist .parcel-cache dist-tsc",
-    "rebuild": "yarn clean && yarn build"
+    "rebuild": "yarn clean && yarn build",
+    "rebuild:tsc": "rimraf dist-tsc && tsc"
   },
   "dependencies": {
     "library-original": "1.0.0"
